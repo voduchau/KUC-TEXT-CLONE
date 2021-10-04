@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./src/textField/index.js"></script>
+    <script type="module" src="./src/test/index.js"></script>
     <title>Document</title>
     <style>
       .container {
-        border: 1px solid red;
+        width: 300px;
       }
     </style>
   </head>
@@ -17,14 +18,19 @@
     <div class="container">
       <kuc-text-field
         label="Username"
-        error="this field is required"
         value="hunghaubmt"
         placeholder="Enter username"
+        myprops="hihi"
       ></kuc-text-field>
+      <br />
+      <br />
+      <br />
       <kuc-text-field
         label="Username"
+        error="Please input your username!"
+        value="hunghaubmt"
         placeholder="Enter username"
-        error="this field is required"
+        myprops="hihi"
         required
       ></kuc-text-field>
     </div>
